@@ -39,6 +39,7 @@ p {
     padding: 7px;
     background: #231e39;
   }
+
   .profile-name{
     font-size: 25px;
     font-weight: bold;
@@ -51,25 +52,7 @@ p {
   button{
     margin: 10px 0 40px 0;
   }
-  .msg-btn, .follow-btn{
-    background: #03bfbc;
-    border: 1px solid #03bfbc;
-    padding: 10px 25px;
-    color: #231e39;
-    border-radius: 3px;
-    font-family: Montserrat, sans-serif;
-    cursor: pointer;
-  }
-  .follow-btn{
-    margin-left: 10px;
-    background: transparent;
-    color: #02899c;
-  }
-  .follow-btn:hover{
-    color: #231e39;
-    background: #03bfbc;
-    transition: .5s;
-  }
+
   .container i{
     padding-left: 20px;
     font-size: 20px;
@@ -82,17 +65,17 @@ p {
   }
 
   .icons {
-    width: 180px;
-    margin: 0 auto 10px;
+    width: 280px;
+    margin: 0 auto 20px;
     display: flex;
     justify-content: space-between;
-    gap: 15px;
+    gap: 10px;
 }
 
 .icons i {
     cursor: pointer;
     padding: 5px;
-    font-size: 18px;
+    font-size: 30px;
     transition: 0.2s;
 }
 
@@ -101,7 +84,7 @@ p {
 }
 
 button {
-  --border-radius: 15px;
+  --border-radius: 14px;
   --border-width: 4px;
   appearance: none;
   position: relative;
@@ -109,7 +92,7 @@ button {
   border: 0;
   background-color: #231e39;
   font-family: "Roboto", Arial, "Segoe UI", sans-serif;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 500;
   color: #fff;
   z-index: 2;
