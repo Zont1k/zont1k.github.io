@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+    position: relative;
+}
+
+/* Декоративные линии */
+.decor-line {
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background: #007bff;
+    opacity: 0.5;
+}
+
+.decor-line.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+.decor-line.top-right {
+    top: 20px;
+    right: 20px;
+    transform: rotate(90deg);
+}
+
+.decor-line.bottom-left {
+    bottom: 20px;
+    left: 20px;
+    transform: rotate(45deg);
+}
+
+.decor-line.bottom-right {
+    bottom: 20px;
+    right: 20px;
+    transform: rotate(-45deg);
+}
+
+/* Header */
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #222;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: #666;
+    margin: 10px 0 20px;
+}
+
+.social-links a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 400;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #0056b3;
+}
+
+/* Sections */
+section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #222;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+p, li {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* About */
+#about p strong {
+    color: #007bff;
+}
+
+/* Skills */
+.skills-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    text-align: center;
+}
+
+.skills-list li {
+    padding: 15px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.skills-list li:hover {
+    background: #e0e0e0;
+}
+
+/* Experience */
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.company-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.company-logo {
+    width: 80px;
+    height: auto;
+}
+
+.experience-item h3 {
+    font-size: 1.8rem;
+    color: #007bff;
+}
+
+.experience-item p:first-of-type {
+    font-style: italic;
+    color: #777;
+}
+
+/* Portfolio */
+.portfolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    padding: 20px;
+    background: #f0f0f0;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5rem;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.portfolio-item a:hover {
+    text-decoration: underline;
+}
+
+/* Contact */
+#contact p {
+    margin: 10px 0;
+}
+
+#contact a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
