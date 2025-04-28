@@ -9,69 +9,76 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 </head>
 <body>
+    <div class="language-switcher">
+        <button onclick="changeLanguage('en')">EN</button>
+        <button onclick="changeLanguage('uk')">UA</button>
+        <button onclick="changeLanguage('de')">DE</button>
+    </div>
+    
     <header>
         <div class="hero">
-            <h1>Oleksii Zotov</h1>
-            <p>.NET Enjoyer  | DevOps Engineer</p>
+            <h1 data-i18n="name">Oleksii Zotov</h1>
+            <p data-i18n="title">.NET Enjoyer | DevOps Engineer</p>
             <div class="social-links">
-                <a href="hhttps://www.linkedin.com/in/oleksii-zotov-8634b3272/" target="_blank">LinkedIn</a>
-                <a href="https://github.com/zont1k" target="_blank">GitHub</a>
-                <a href="https://t.me/oleksii_zotov" target="_blank">Telegram</a>
+                <a href="https://www.linkedin.com/in/oleksii-zotov-8634b3272/" target="_blank" data-i18n="linkedin">LinkedIn</a>
+                <a href="https://github.com/zont1k" target="_blank" data-i18n="github">GitHub</a>
+                <a href="https://t.me/oleksii_zotov" target="_blank" data-i18n="telegram">Telegram</a>
             </div>
         </div>
     </header>
 
     <section id="about">
         <div class="decor-line top-left"></div>
-        <h2>About Me</h2>
-        <p>I’m Oleksii Zotov, a .NET enjoyer and DevOps Engineer from Odesa, Ukraine, currently based in Stuttgart, Germany. I’m studying to become a <strong>IT Specialist in System Integration</strong> while working at <strong>VRM IT</strong>, a forward-thinking IT company. Self-taught in multiple technologies, I’m passionate about coding, automation, and building efficient solutions.</p>
+        <h2 data-i18n="about_title">About Me</h2>
+        <p data-i18n="about_text">I'm Oleksii Zotov, a .NET enjoyer and DevOps Engineer from Odesa, Ukraine, currently based in Stuttgart, Germany. I'm studying to become a <strong>IT Specialist in System Integration</strong> while working at <strong>VRM IT</strong>, a forward-thinking IT company. Self-taught in multiple technologies, I'm passionate about coding, automation, and building efficient solutions.</p>
         <div class="decor-line bottom-right"></div>
     </section>
 
     <section id="skills">
         <div class="decor-line top-right"></div>
-        <h2>Skills</h2>
+        <h2 data-i18n="skills_title">Skills</h2>
         <ul class="skills-list">
-            <li>C# & .NET Core</li>
-            <li>Entity Framework</li>
-            <li>SQL & PostgreSQL</li>
-            <li>MongoDB</li>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Python</li>
-            <li>DevOps (Docker, CI/CD)</li>
-            <li>System Integration</li>
+            <li data-i18n="skill1">C# & .NET Core</li>
+            <li data-i18n="skill2">Entity Framework</li>
+            <li data-i18n="skill3">SQL & PostgreSQL</li>
+            <li data-i18n="skill4">MongoDB</li>
+            <li data-i18n="skill5">HTML, CSS, JavaScript</li>
+            <li data-i18n="skill6">Python</li>
+            <li data-i18n="skill7">DevOps (Docker, CI/CD)</li>
+            <li data-i18n="skill8">System Integration</li>
         </ul>
         <div class="decor-line bottom-left"></div>
     </section>
 
     <section id="experience">
         <div class="decor-line top-left"></div>
-        <h2>Experience</h2>
+        <h2 data-i18n="experience_title">Experience</h2>
         <div class="experience-item">
             <div class="company-header">
                 <img src="vrm-it-logo-placeholder.png" alt="VRM IT Logo" class="company-logo">
                 <div>
                     <h3>VRM IT</h3>
-                    <p><strong>Network Engineer</strong> | Filderstadt, Germany | 2024 - Present</p>
+                    <p><strong data-i18n="position">Network Engineer</strong> | Filderstadt, Germany | 2024 - <span data-i18n="present">Present</span></p>
                 </div>
             </div>
-            <p>Assisting in network configuration, monitoring IT infrastructure, and supporting system integration tasks as part of my IT Specialist in System Integration training.</p>        </div>
+            <p data-i18n="experience_text">Assisting in network configuration, monitoring IT infrastructure, and supporting system integration tasks as part of my IT Specialist in System Integration training.</p>
+        </div>
         <div class="decor-line bottom-right"></div>
     </section>
 
     <section id="portfolio">
         <div class="decor-line top-right"></div>
-        <h2>Portfolio</h2>
+        <h2 data-i18n="portfolio_title">Portfolio</h2>
         <div class="portfolio-list">
             <div class="portfolio-item">
                 <h3>DisNet - Discord Library</h3>
-                <p>A C# library for interacting with Discord API, built to simplify bot development.</p>
-                <a href="https://github.com/Zont1k/DisNet" target="_blank">View on GitHub</a>
+                <p data-i18n="portfolio1_desc">A C# library for interacting with Discord API, built to simplify bot development.</p>
+                <a href="https://github.com/Zont1k/DisNet" target="_blank" data-i18n="view_github">View on GitHub</a>
             </div>
             <div class="portfolio-item">
-                <h3>Game for Telegram - Durak</h3>
-                <p>A Telegram bot game based on the classic card game "Durak" (in development).</p>
-                <span>Project in progress, not yet publicly available.</span>
+                <h3 data-i18n="portfolio2_title">Game for Telegram - Durak</h3>
+                <p data-i18n="portfolio2_desc">A Telegram bot game based on the classic card game "Durak" (in development).</p>
+                <span data-i18n="in_progress">Project in progress, not yet publicly available.</span>
             </div>
         </div>
         <div class="decor-line bottom-left"></div>
@@ -79,17 +86,134 @@
 
     <section id="contact">
         <div class="decor-line top-left"></div>
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:oleksiizotov06@gmail.com">oleksiizotov06@gmail.com</a></p>
-        <p>Location: Stuttgart, Germany</p>
+        <h2 data-i18n="contact_title">Contact Me</h2>
+        <p data-i18n="email_label">Email: <a href="mailto:oleksiizotov06@gmail.com">oleksiizotov06@gmail.com</a></p>
+        <p data-i18n="location">Location: Stuttgart, Germany</p>
         <div class="social-links">
-            <a href="hhttps://www.linkedin.com/in/oleksii-zotov-8634b3272/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/zont1k" target="_blank">GitHub</a>
-            <a href="https://t.me/oleksii_zotov" target="_blank">Telegram</a>
+            <a href="https://www.linkedin.com/in/oleksii-zotov-8634b3272/" target="_blank" data-i18n="linkedin">LinkedIn</a>
+            <a href="https://github.com/zont1k" target="_blank" data-i18n="github">GitHub</a>
+            <a href="https://t.me/oleksii_zotov" target="_blank" data-i18n="telegram">Telegram</a>
         </div>
         <div class="decor-line bottom-right"></div>
     </section>
 
-    <script src="script.js"></script>
+    <script>
+        // Language translations
+        const translations = {
+            en: {
+                "name": "Oleksii Zotov",
+                "title": ".NET Enjoyer | DevOps Engineer",
+                "linkedin": "LinkedIn",
+                "github": "GitHub",
+                "telegram": "Telegram",
+                "about_title": "About Me",
+                "about_text": "I'm Oleksii Zotov, a .NET enjoyer and DevOps Engineer from Odesa, Ukraine, currently based in Stuttgart, Germany. I'm studying to become a <strong>IT Specialist in System Integration</strong> while working at <strong>VRM IT</strong>, a forward-thinking IT company. Self-taught in multiple technologies, I'm passionate about coding, automation, and building efficient solutions.",
+                "skills_title": "Skills",
+                "skill1": "C# & .NET Core",
+                "skill2": "Entity Framework",
+                "skill3": "SQL & PostgreSQL",
+                "skill4": "MongoDB",
+                "skill5": "HTML, CSS, JavaScript",
+                "skill6": "Python",
+                "skill7": "DevOps (Docker, CI/CD)",
+                "skill8": "System Integration",
+                "experience_title": "Experience",
+                "position": "Network Engineer",
+                "present": "Present",
+                "experience_text": "Assisting in network configuration, monitoring IT infrastructure, and supporting system integration tasks as part of my IT Specialist in System Integration training.",
+                "portfolio_title": "Portfolio",
+                "portfolio1_desc": "A C# library for interacting with Discord API, built to simplify bot development.",
+                "view_github": "View on GitHub",
+                "portfolio2_title": "Game for Telegram - Durak",
+                "portfolio2_desc": "A Telegram bot game based on the classic card game \"Durak\" (in development).",
+                "in_progress": "Project in progress, not yet publicly available.",
+                "contact_title": "Contact Me",
+                "email_label": "Email: <a href="mailto:oleksiizotov06@gmail.com">oleksiizotov06@gmail.com</a>",
+                "location": "Location: Stuttgart, Germany"
+            },
+            uk: {
+                "name": "Олексій Зотов",
+                "title": ".NET Розробник | DevOps Інженер",
+                "linkedin": "LinkedIn",
+                "github": "GitHub",
+                "telegram": "Telegram",
+                "about_title": "Про мене",
+                "about_text": "Я Олексій Зотов, .NET розробник та DevOps інженер з Одеси, Україна, зараз проживаю у Штутгарті, Німеччина. Я навчаюся на <strong>IT-спеціаліста з системної інтеграції</strong> та працюю в <strong>VRM IT</strong>, прогресивній IT компанії. Самоучка у багатьох технологіях, я захоплююсь програмуванням, автоматизацією та створенням ефективних рішень.",
+                "skills_title": "Навички",
+                "skill1": "C# & .NET Core",
+                "skill2": "Entity Framework",
+                "skill3": "SQL & PostgreSQL",
+                "skill4": "MongoDB",
+                "skill5": "HTML, CSS, JavaScript",
+                "skill6": "Python",
+                "skill7": "DevOps (Docker, CI/CD)",
+                "skill8": "Системна інтеграція",
+                "experience_title": "Досвід",
+                "position": "Мережевий інженер",
+                "present": "Зараз",
+                "experience_text": "Допомагаю у налаштуванні мереж, моніторінгу IT-інфраструктури та підтримці завдань системної інтеграції в рамках навчання на IT-спеціаліста з системної інтеграції.",
+                "portfolio_title": "Портфоліо",
+                "portfolio1_desc": "Бібліотека на C# для взаємодії з Discord API, створена для спрощення розробки ботів.",
+                "view_github": "Переглянути на GitHub",
+                "portfolio2_title": "Гра для Telegram - Дурак",
+                "portfolio2_desc": "Бот-гра для Telegram на основі класичної карткової гри \"Дурак\" (у розробці).",
+                "in_progress": "Проект у розробці, ще не доступний публічно.",
+                "contact_title": "Контакти",
+                "email_label": "Електронна пошта: <a href="mailto:oleksiizotov06@gmail.com">oleksiizotov06@gmail.com</a>",
+                "location": "Місцезнаходження: Штутгарт, Німеччина"
+            },
+            de: {
+                "name": "Oleksii Zotov",
+                "title": ".NET Entwickler | DevOps Ingenieur",
+                "linkedin": "LinkedIn",
+                "github": "GitHub",
+                "telegram": "Telegram",
+                "about_title": "Über mich",
+                "about_text": "Ich bin Oleksii Zotov, ein .NET-Enthusiast und DevOps-Ingenieur aus Odessa, Ukraine, derzeit wohnhaft in Stuttgart, Deutschland. Ich studiere zum <strong>IT-Spezialist für Systemintegration</strong> und arbeite bei <strong>VRM IT</strong>, einem zukunftsorientierten IT-Unternehmen. Als Autodidakt in mehreren Technologien bin ich leidenschaftlich an Codierung, Automatisierung und dem Bau effizienter Lösungen interessiert.",
+                "skills_title": "Fähigkeiten",
+                "skill1": "C# & .NET Core",
+                "skill2": "Entity Framework",
+                "skill3": "SQL & PostgreSQL",
+                "skill4": "MongoDB",
+                "skill5": "HTML, CSS, JavaScript",
+                "skill6": "Python",
+                "skill7": "DevOps (Docker, CI/CD)",
+                "skill8": "Systemintegration",
+                "experience_title": "Berufserfahrung",
+                "position": "Netzwerktechniker",
+                "present": "Aktuell",
+                "experience_text": "Unterstützung bei der Netzwerkkonfiguration, Überwachung der IT-Infrastruktur und Unterstützung von Systemintegrationsaufgaben im Rahmen meiner Ausbildung zum IT-Spezialisten für Systemintegration.",
+                "portfolio_title": "Portfolio",
+                "portfolio1_desc": "Eine C#-Bibliothek zur Interaktion mit der Discord-API, entwickelt zur Vereinfachung der Bot-Entwicklung.",
+                "view_github": "Auf GitHub ansehen",
+                "portfolio2_title": "Telegram-Spiel - Durak",
+                "portfolio2_desc": "Ein Telegram-Bot-Spiel basierend auf dem klassischen Kartenspiel \"Durak\" (in Entwicklung).",
+                "in_progress": "Projekt in Arbeit, noch nicht öffentlich verfügbar.",
+                "contact_title": "Kontakt",
+                "email_label": "Email: <a href="mailto:oleksiizotov06@gmail.com">oleksiizotov06@gmail.com</a>",
+                "location": "Standort: Stuttgart, Deutschland"
+            }
+        };
+
+        // Function to change language
+        function changeLanguage(lang) {
+            const elements = document.querySelectorAll('[data-i18n]');
+            elements.forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                if (translations[lang][key]) {
+                    if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
+                        element.value = translations[lang][key];
+                    } else {
+                        element.innerHTML = translations[lang][key];
+                    }
+                }
+            });
+        }
+
+        // Initialize with English
+        document.addEventListener('DOMContentLoaded', function() {
+            changeLanguage('en');
+        });
+    </script>
 </body>
 </html>
